@@ -1,0 +1,40 @@
+:root {
+    /* Mau goc: #34E0A1 */
+    --primary-color : #498c74;
+    --dark-primary-color : #0d3c2b;
+    --light-primary-color : #0d3c2b;
+    --white-color : #fff;
+    --black-color : #000;
+    --text-color : #333;
+    --border-color : #dbdbdb ;
+    --star-gold-color: #fd4;
+    --header-height: 120px;
+    --navbar-height: 34px;
+}
+
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+    line-height : 1.6rem ;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+button {
+    min-width: 30px;
+    min-height: 20px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-size: 1.3rem;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    filter: brightness(120%);
+}
