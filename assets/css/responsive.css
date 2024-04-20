@@ -1,0 +1,18 @@
+
+
+
+@media only screen and (max-width: 1023px) {
+}
+
+
+/* MOBILE */
+@media only screen and (max-width: 739px) {
+    .subFooter__signup, .subFooter__nav, .footer__text, .downloadapp, .BestOfChoice {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 739px) {
+
+}
