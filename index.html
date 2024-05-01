@@ -1,593 +1,730 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>DT Travel Preview</title>
-        <!-- CSS -->
-        <link rel="stylesheet" href="./assets/css/base.css">
-        <link rel="stylesheet" href="./assets/css/main.css">
-        <link rel="stylesheet" href="./assets/css/grid.css">
-        <link rel="stylesheet" href="./assets/css/responsive.css">
+<!DOCTYPE html>
+<html lang="en">
 
-        <!-- NHÚNG FONT -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DT Travel Preview</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
 
-        <!-- NHÚNG ICON -->
-        <link rel="stylesheet" href="./assets/font/fontawesome-free-6.5.2-web/css/all.css">
 
-        <style></style>
-    </head>
-    <body>
-        <div id="header">
-            <div class="header__logo">
-                <a href="/index.html" class="logo--link">Dtravel.com</a>
+    <!-- NHÚNG FONT -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+    <!-- NHÚNG ICON -->
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.5.2-web/css/all.css">
+
+    <style></style>
+</head>
+
+<body>
+    <div id="header">
+        <div class="header__logo">
+            <a href="/" class="logo--link">Dtravel.com</a>
+        </div>
+        <div class="header__container hiden-in-mobile-tablet">
+            <div class="header__optional">
+                <a href="" class="header__current">VND</a>
+                <a href="" class="header__languages">
+                    <img src="https://png.pngtree.com/png-vector/20220610/ourmid/pngtree-circular-world-flag-vietnam-icon-png-image_4830539.png"
+                        alt="language">
+                </a>
+                <a href="/lienhedichvu" class="header__support">
+                    <i class="fa-regular fa-circle-question"></i>
+                </a>
+                <a href="" class="header__header__upload">Thêm chỗ nghỉ của bạn!</a>
             </div>
-            <div class="header__container">
-                <div class="header__optional">
-                    <a href="" class="header__current">VND</a>
-                    <a href="" class="header__languages">
-                        <img src="https://png.pngtree.com/png-vector/20220610/ourmid/pngtree-circular-world-flag-vietnam-icon-png-image_4830539.png" alt="language">
-                    </a>
-                    <a href="./layout/lienhedichvu/index.html" class="header__support">
-                        <i class="fa-regular fa-circle-question"></i>
-                    </a>
-                    <a href="" class="header__header__upload">Thêm chỗ nghỉ của bạn!</a>
+            <div class="header__button">
+                <a class="button__item">
+                    <p class="item__text">Đăng ký</p>
+                </a>
+                <a class="button__item">
+                    <p class="item__text">Đăng nhập</p>
+                </a>
+            </div>
+        </div>
+        <div class="header-bars">
+            <i class="fa-solid fa-bars header-bars-icon"></i>
+        </div>
+    </div>
+    <div id="nav">
+        <div class="nav__link">
+            <a href="" class="nav__item nav__selected">
+                <i class="fa-solid fa-bed"></i>
+                <p class="nav__text">Lưu trú</p>
+            </a>
+        </div>
+        <div class="nav__link">
+            <a href="" class="nav__item">
+                <i class="fa-solid fa-plane"></i>
+                <p class="nav__text">Chuyến bay</p>
+            </a>
+        </div>
+        <div class="nav__link">
+            <a href="" class="nav__item">
+                <i class="fa-solid fa-globe"></i>
+                <p class="nav__text">Chuyến bay + Khách sạn</p>
+            </a>
+        </div>
+        <div class="nav__link">
+            <a href="" class="nav__item">
+                <i class="fa-solid fa-car"></i>
+                <p class="nav__text">Thuê xe</p>
+            </a>
+        </div>
+        <div class="nav__link">
+            <a href="" class="nav__item">
+                <i class="fa-solid fa-place-of-worship"></i>
+                <p class="nav__text">Địa điểm tham quan</p>
+            </a>
+        </div>
+        <div class="nav__link">
+            <a href="" class="nav__item">
+                <i class="fa-solid fa-car"></i>
+                <p class="nav__text">Taxi sân bay</p>
+            </a>
+        </div>
+    </div>
+    <nav class="nav-tablet-mobile">
+        <ul class="nav-tablet-mobile-list">
+            <h3 class="nav-tablet-mobile-title">Tài khoản</h3>
+            <li class="nav-tablet-mobile-item">
+                <i class="fa-regular fa-user"></i>
+                <a href="" class="nav-tablet-mobile-link">Đăng nhập/Đăng ký</a>
+            </li>
+            <h3 class="nav-tablet-mobile-title">Khác</h3>
+            <li class="nav-tablet-mobile-item">
+                <span href="" class="nav__current">VND</span>
+                <a href="" class="nav-tablet-mobile-link">Việt Nam Đồng</a>
+            </li>
+            <li class="nav-tablet-mobile-item">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <a href="" class="nav-tablet-mobile-link">Tải ứng dụng</a>
+            </li>
+            <li class="nav-tablet-mobile-item">
+                <i class="fa-solid fa-house"></i>
+                <a href="" class="nav-tablet-mobile-link">Đăng chỗ nghỉ</a>
+            </li>
+            <li class="nav-tablet-mobile-item">
+                <i class="fa-regular fa-circle-question"></i>
+                <a href="/lienhedichvu" class="nav-tablet-mobile-link">Liên hệ hỗ trợ</a>
+            </li>
+        </ul>
+        <div class="nav-mobile-tablet-close">
+            <i class="fa-solid fa-x"></i>
+        </div>
+    </nav>
+
+    <div class="overlay"></div>
+    <div id="content ">
+        <div class="search__container ">
+            <h3 class="search__title">Đi đâu?</h3>
+            <div class="search__nav">
+                <div class="search__nav__item search__nav__selected">
+                    <i class="fa-solid fa-house"></i>
+                    <p class="search__nav__title ">Tìm kiếm tất cả</p>
                 </div>
-                <div class="header__button">
-                    <a class="button__item">
-                        <p class="item__text">Đăng ký</p>
+                <div class="search__nav__item ">
+                    <i class="fa-solid fa-hotel"></i>
+                    <p class="search__nav__title">Khách sạn</p>
+                </div>
+                <div class="search__nav__item">
+                    <i class="fa-solid fa-ticket"></i>
+                    <p class="search__nav__title">Hoạt động giải trí</p>
+                </div>
+                <div class="search__nav__item">
+                    <i class="fa-solid fa-utensils"></i>
+                    <p class="search__nav__title">Nhà hàng</p>
+                </div>
+            </div>
+            <div class="search__box">
+                <i class="search__icon fa-solid fa-magnifying-glass"></i>
+                <input class="search__box__input" type="text" placeholder="Địa điểm tham quan, ...">
+                <button class="search__box__btn">Tìm kiếm</button>
+            </div>
+        </div>
+
+        <div class="BestOfChoice">
+            <img class="BestOfChoice__img" src="./assets/img/main_img/baibienbestofchoice.jpg" alt="">
+            <div class="BestOfChoice__wrap">
+                <h3 class="BestOfChoice__title">Bãi biển đạt giải thưởng Best of the Best của Travellers' Choice</h3>
+                <p class="BestOfChoice__desc">Xem các bãi biển đạt giải năm nay – do bạn lựa chọn.</p>
+                <a
+                    href="https://dangcongsan.vn/kinh-te-va-hoi-nhap/tripadvisor-vinh-danh-nhieu-diem-den-cua-viet-nam-657387.html">
+
+                    <button class="BestOfChoice__button">Xem danh sách</button>
+                </a>
+            </div>
+        </div>
+        <div class="content__divided"></div>
+        <div class="content__trend">
+            <h3 class="content__trend__title">Điểm đến đang thịnh hành</h3>
+            <p class="content__trend__desc">Du khách tìm kiếm về Việt Nam cũng đặt chỗ ở những nơi này</p>
+            <div class="trend__img__wrap">
+                <div class="trend__img__collum1">
+                    <a href="/trend" class="trend__collum__item">
+                        <img src="./assets/img/main_img/content_trend/tphcm.jpg" alt="TPHCM" class="trend__collum__img">
+                        <div class="trend__collum__text">
+                            <h3>TP.Hồ Chí Minh</h3>
+                            <img src="./assets/img/main_img/content_trend/covietnam.webp" alt="">
+                        </div>
                     </a>
-                    <a class="button__item">
-                        <p class="item__text">Đăng nhập</p>
+                    <a href="/trend" class="trend__collum__item">
+                        <img src="./assets/img/main_img/content_trend/hanoi.jpg" alt="" class="trend__collum__img">
+                        <div class="trend__collum__text">
+                            <h3>Hà Nội</h3>
+                            <img src="./assets/img/main_img/content_trend/covietnam.webp" alt="">
+                        </div>
+                    </a>
+
+                </div>
+                <div class="trend__img__collum2">
+                    <a href="/trend" class="trend__collum__item">
+                        <img src="./assets/img/main_img/content_trend/hoian.png" alt="" class="trend__collum__img">
+                        <div class="trend__collum__text">
+                            <h3>Hội An</h3>
+                            <img src="./assets/img/main_img/content_trend/covietnam.webp" alt="">
+                        </div>
+                    </a>
+                    <a href="/trend/" class="trend__collum__item">
+                        <img src="./assets/img/main_img/content_trend/danang.jpg" alt="" class="trend__collum__img">
+                        <div class="trend__collum__text">
+                            <h3>Đà Nẵng</h3>
+                            <img src="./assets/img/main_img/content_trend/covietnam.webp" alt="">
+                        </div>
+                    </a>
+                    <a href="/trendk/" class="trend__collum__item">
+                        <img src="./assets/img/main_img/content_trend/bangkok.jpg" alt="" class="trend__collum__img">
+                        <div class="trend__collum__text">
+                            <h3>Bangkok</h3>
+                            <img src="./assets/img/main_img/content_trend/cobangcoc.jpg" alt="">
+                        </div>
                     </a>
                 </div>
             </div>
         </div>
-
-
-        <div id="nav">
-            <div class="nav__link">
-                <a href="" class="nav__item nav__selected">
-                    <i class="fa-solid fa-bed"></i>
-                    <p class="nav__text">Lưu trú</p>
+        <!-- Explore content -->
+        <div class="content__divided"></div>
+        <div class="content__selection">
+            <h3 class="content__selection__title">Khám phá Việt Nam</h3>
+            <p class="content__selection__desc">Các điểm đến phổ biến này có nhiều điều chờ đón bạn</p>
+            <div class="content__selection__wrap">
+                <a href="/trend" class="selection__wrap__item">
+                    <img src="./assets/img/main_img/content_explore/tphcm.jpg" alt=""
+                        class="selection__wrap__item__img">
+                    <h3 class="selection__wrap__item__title">TP. Hồ Chí Minh</h3>
+                    <p class="selection__wrap__item__infor">4.657 chỗ nghỉ</p>
                 </a>
-            </div>
-            <div class="nav__link">
-                <a href="" class="nav__item">
-                    <i class="fa-solid fa-plane"></i>
-                    <p class="nav__text">Chuyến bay</p>
+                <a href="/trend" class="selection__wrap__item">
+                    <img src="./assets/img/main_img/content_explore/hanoi.jpg" alt=""
+                        class="selection__wrap__item__img">
+                    <h3 class="selection__wrap__item__title">Hà Nội</h3>
+                    <p class="selection__wrap__item__infor">3.452 chỗ nghỉ</p>
                 </a>
-            </div>
-            <div class="nav__link">
-                <a href="" class="nav__item">
-                    <i class="fa-solid fa-globe"></i>
-                    <p class="nav__text">Chuyến bay + Khách sạn</p>
+                <a href="/trend" class="selection__wrap__item">
+                    <img src="./assets/img/main_img/content_explore/danang.jpg" alt=""
+                        class="selection__wrap__item__img">
+                    <h3 class="selection__wrap__item__title">Đà Nẵng</h3>
+                    <p class="selection__wrap__item__infor">1.489 chỗ nghỉ</p>
                 </a>
-            </div>
-            <div class="nav__link">
-                <a href="" class="nav__item">
-                    <i class="fa-solid fa-car"></i>
-                    <p class="nav__text">Thuê xe</p>
+                <a href="/trend" class="selection__wrap__item">
+                    <img src="./assets/img/main_img/content_explore/halong.jpg" alt=""
+                        class="selection__wrap__item__img">
+                    <h3 class="selection__wrap__item__title">Hạ Long</h3>
+                    <p class="selection__wrap__item__infor">6.786 chỗ nghỉ</p>
                 </a>
-            </div>
-            <div class="nav__link">
-                <a href="" class="nav__item">
-                    <i class="fa-solid fa-place-of-worship"></i>
-                    <p class="nav__text">Địa điểm tham quan</p>
+                <a href="/trend" class="selection__wrap__item">
+                    <img src="./assets/img/main_img/content_explore/camau.jpg" alt=""
+                        class="selection__wrap__item__img">
+                    <h3 class="selection__wrap__item__title">Cà Mau</h3>
+                    <p class="selection__wrap__item__infor">2.827 chỗ nghỉ</p>
                 </a>
-            </div>
-            <div class="nav__link">
-                <a href="" class="nav__item">
-                    <i class="fa-solid fa-car"></i>
-                    <p class="nav__text">Taxi sân bay</p>
+                <a href="/trend" class="selection__wrap__item">
+                    <img src="./assets/img/main_img/content_explore/bangkok.jpg" alt=""
+                        class="selection__wrap__item__img">
+                    <h3 class="selection__wrap__item__title">Bangkok</h3>
+                    <p class="selection__wrap__item__infor">951 chỗ nghỉ</p>
                 </a>
+                <div class="content__selection__next">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
             </div>
         </div>
-        <div id="content ">
-
-            <div class="search__container ">
-                <h3 class="search__title">Đi đâu?</h3>
-                <div class="search__nav">
-                    <div class="search__nav__item search__nav__selected">
-                        <i class="fa-solid fa-house"></i>
-                        <p class="search__nav__title ">Tìm kiếm tất cả</p>
-                    </div><div class="search__nav__item ">
-                        <i class="fa-solid fa-hotel"></i>
-                        <p class="search__nav__title">Khách sạn</p>
-                    </div><div class="search__nav__item">
-                        <i class="fa-solid fa-ticket"></i>
-                        <p class="search__nav__title">Hoạt động giải trí</p>
-                    </div><div class="search__nav__item">
-                        <i class="fa-solid fa-utensils"></i>
-                        <p class="search__nav__title">Nhà hàng</p>
+        <!-- SearchBy -->
+        <div class="content__divided"></div>
+        <div class="content__selection ">
+            <h3 class="content__selection__title ">Tìm theo loại chỗ nghỉ ở Hà Nội</h3>
+            <div class="content__selection__wrap">
+                <a href="/searchby" class="selection__wrap__item ">
+                    <img src="./assets/img/main_img/content_searchby/canho.jpg" alt=""
+                        class="selection__wrap__item__img ">
+                    <h3 class="selection__wrap__item__title ">Căn hộ</h3>
+                    <p class="selection__wrap__item__desc ">Dành cho các cặp đôi thích Penhouse</p>
+                    <p class="selection__wrap__item__infor ">Còn 1.489 chỗ nghỉ trống</p>
+                </a>
+                <a href="/searchby" class="selection__wrap__item ">
+                    <img src="./assets/img/main_img/content_searchby/chungcu.jpg" alt=""
+                        class="selection__wrap__item__img ">
+                    <h3 class="selection__wrap__item__title ">Chung cư</h3>
+                    <p class="selection__wrap__item__desc ">Chung cu 2 phòng ngủ 1 phòng khách</p>
+                    <p class="selection__wrap__item__infor ">Còn 2.679 chỗ nghỉ trống</p>
+                </a>
+                <a href="/searchby" class="selection__wrap__item ">
+                    <img src="./assets/img/main_img/content_searchby/bietthu.jpg" alt=""
+                        class="selection__wrap__item__img ">
+                    <h3 class="selection__wrap__item__title ">Biệt thự</h3>
+                    <p class="selection__wrap__item__desc ">Phù hợp với Richkid</p>
+                    <p class="selection__wrap__item__infor ">Còn 209 chỗ nghỉ trống</p>
+                </a>
+                <a href="/searchby" class="selection__wrap__item ">
+                    <img src="./assets/img/main_img/content_searchby/laudai.jpg" alt=""
+                        class="selection__wrap__item__img ">
+                    <h3 class="selection__wrap__item__title ">Lâu đài</h3>
+                    <p class="selection__wrap__item__desc ">Siêu phù hợp với người mộng mer</p>
+                    <p class="selection__wrap__item__infor ">Còn 306 chỗ nghỉ trống</p>
+                </a>
+                <div class="content__selection__next content__searchby__next">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </div>
+        </div>
+        <!-- TopRank content -->
+        <div class="content__divided"></div>
+        <div class="content__selection">
+            <h3 class="content__selection__title">Điểm đến hàng đầu cho kỳ nghỉ tiếp theo của bạn</h3>
+            <p class="content__selection__desc">Đây là địa điểm thu hút nhiều khách du lịch</p>
+            <div class="content__selection__wrap">
+                <a href="/trend" class="selection__wrap__item content__toprank">
+                    <img src="./assets/img/main_img/content_toprank/tokyo.jpg" alt=""
+                        class="selection__wrap__item__img">
+                    <h3 class="selection__wrap__item__title">Tokyo, Nhật Bản</h3>
+                </a>
+                <a href="/trend" class="selection__wrap__item content__toprank">
+                    <img src="./assets/img/main_img/content_toprank/singapo.jpg" alt=""
+                        class="selection__wrap__item__img">
+                    <h3 class="selection__wrap__item__title">Singapore, Singapore</h3>
+                </a>
+                <a href="/trend" class="selection__wrap__item content__toprank">
+                    <img src="./assets/img/main_img/content_toprank/hanoi.jpg" alt=""
+                        class="selection__wrap__item__img">
+                    <h3 class="selection__wrap__item__title">Hà Nội, Việt Nam</h3>
+                </a>
+                <a href="/trend" class="selection__wrap__item content__toprank">
+                    <img src="./assets/img/main_img/content_toprank/seoul.jpg" alt=""
+                        class="selection__wrap__item__img">
+                    <h3 class="selection__wrap__item__title">Seoul, Hàn Quốc</h3>
+                </a>
+                <div class="content__selection__next content__toprank__next">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </div>
+        </div>
+        <!-- FindActive content -->
+        <div class="content__divided"></div>
+        <div class="content__selection">
+            <h3 class="content__selection__title">Tìm hoạt động ở...</h3>
+            <div class="content__selection__wrap">
+                <a href="" class="selection__wrap__item content__findacctive">
+                    <img src="./assets/img/main_img/content_findactitivies/paris.jpg" alt=""
+                        class="selection__wrap__item__img">
+                    <div class="selection__wrap__item__text">
+                        <h3 class="selection__wrap__item__title content__findacctive__title">Paris</h3>
+                        <p class="selection__wrap__item__desc content__findacctive__desc">2200+ hoạt động</p>
                     </div>
-                </div>
-                <div class="search__box">
-                    <i class="search__icon fa-solid fa-magnifying-glass"></i>
-                    <input class="search__box__input" type="text" placeholder="Địa điểm tham quan, ...">
-                    <button class="search__box__btn">Tìm kiếm</button>
+                </a>
+                <a href="" class="selection__wrap__item content__findacctive">
+                    <img src="./assets/img/main_img/content_findactitivies/tokyo.jpg" alt=""
+                        class="selection__wrap__item__img">
+                    <div class="selection__wrap__item__text">
+                        <h3 class="selection__wrap__item__title content__findacctive__title">Tokyo</h3>
+                        <p class="selection__wrap__item__desc content__findacctive__desc">1800+ hoạt động</p>
+                    </div>
+                </a>
+                <a href="" class="selection__wrap__item content__findacctive">
+                    <img src="./assets/img/main_img/content_findactitivies/seoul.jpg" alt=""
+                        class="selection__wrap__item__img">
+                    <div class="selection__wrap__item__text">
+                        <h3 class="selection__wrap__item__title content__findacctive__title">Seoul</h3>
+                        <p class="selection__wrap__item__desc content__findacctive__desc">2780+ hoạt động</p>
+                    </div>
+                </a>
+                <a href="" class="selection__wrap__item content__findacctive">
+                    <img src="./assets/img/main_img/content_findactitivies/hongkong.jpg" alt=""
+                        class="selection__wrap__item__img">
+                    <div class="selection__wrap__item__text">
+                        <h3 class="selection__wrap__item__title content__findacctive__title">Hongkong</h3>
+                        <p class="selection__wrap__item__desc content__findacctive__desc">132 0+ hoạt động</p>
+                    </div>
+                </a>
+                <div class="content__selection__next content__findacctive__next">
+                    <i class="fa-solid fa-chevron-right"></i>
                 </div>
             </div>
-
-            <div class="BestOfChoice">
-                <img class="BestOfChoice__img" src="./assets/img/main_img/baibienbestofchoice.jpg" alt="">
-                <div class="BestOfChoice__wrap">
-                    <h3 class="BestOfChoice__title">Bãi biển đạt giải thưởng Best of the Best của Travellers' Choice</h3>
-                    <p class="BestOfChoice__desc">Xem các bãi biển đạt giải năm nay – do bạn lựa chọn.</p>
-                    <a href="https://dangcongsan.vn/kinh-te-va-hoi-nhap/tripadvisor-vinh-danh-nhieu-diem-den-cua-viet-nam-657387.html">
-
-                        <button class="BestOfChoice__button">Xem danh sách</button>
-                    </a>
-                </div>
-            </div>
-            
-            <div class="content__trend">
-                <h3 class="content__trend__title">Điểm đến đang thịnh hành</h3>
-                <p class="content__trend__desc">Du khách tìm kiếm về Việt Nam cũng đặt chỗ ở những nơi này</p>
-                <div class="trend__img__wrap">
-                    <div class="trend__img__collum1">
-                        <a href="/layout/trend_layout/trend_tphcm/" class="trend__collum__item">
-                            <div class="trend__collum__text">
-                                <h3>TP.Hồ Chí Minh</h3>
-                                <img src="./assets/img/main_img/content_trend/covietnam.webp" alt="">
+        </div>
+        <!-- Hightlight Content -->
+        <div class="content__divided"></div>
+        <div class="hightline__content">
+            <h3 class="content__selection__title">Những chỗ nghỉ nổi bật được đề xuất cho quý khách</h3>
+            <p class="content__selection__desc">Từ biệt thự, lâu đài cho đến nhà thuyền, nhà triệt, chúng tôi đều có hết
+            </p>
+            <div class="hightline__wrap">
+                <a href="/roomdetail" class="hightline__item">
+                    <div class="hightline__item__container">
+                        <img src="./assets/img/main_img/content_hightline/1.jpg" alt="" class="hightline__item__img">
+                        <div class="hightline__item__wrap">
+                            <h3 class="hightline__item__wrap__title">Nhà của Thóc - CSJ Tower Vũng Tàu</h3>
+                            <div class="hightline__item__wrap__info">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-location-dot hightline__item__wrap__location__icon"></i>
+                                <p class="hightline__item__wrap__info__location">Vũng Tàu</p>
                             </div>
-                            <img src="./assets/img/main_img/content_trend/tphcm.jpg" alt="TPHCM" class="trend__collum__img">
-                        </a>
-                        <a href="/layout/trend_layout/trend_hanoi/" class="trend__collum__item">
-                            <div class="trend__collum__text">
-                                <h3>Hà Nội</h3>
-                            <img src="./assets/img/main_img/content_trend/covietnam.webp" alt="">
-                            </div>
-                            <img src="./assets/img/main_img/content_trend/hanoi.jpg" alt="" class="trend__collum__img">
-                        </a>
-
-                    </div>
-                    <div class="trend__img__collum2">
-                        <a href="/layout/trend_layout/trend_hoian/" class="trend__collum__item">
-                            <div class="trend__collum__text">
-                                <h3>Hội An</h3>
-                            <img src="./assets/img/main_img/content_trend/covietnam.webp" alt="">
-                            </div>
-                            <img src="./assets/img/main_img/content_trend/hoian.png" alt="" class="trend__collum__img">
-                        </a>
-                        <a href="/layout/trend_layout/trend_danang/" class="trend__collum__item">
-                            <div class="trend__collum__text">
-                                <h3>Đà Nẵng</h3>
-                            <img src="./assets/img/main_img/content_trend/covietnam.webp" alt="">
-                            </div>
-                            <img src="./assets/img/main_img/content_trend/danang.jpg" alt="" class="trend__collum__img">
-                        </a>
-                        <a href="/layout/trend_layout/trend_bangkok/" class="trend__collum__item">
-                            <div class="trend__collum__text">
-                                <h3>Bangkok</h3>
-                                <img src="./assets/img/main_img/content_trend/cobangcoc.jpg" alt="">
-                            </div>
-                            <img src="./assets/img/main_img/content_trend/bangkok.jpg" alt="" class="trend__collum__img">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!-- Explore content -->
-            <div class="content__selection">
-                <h3 class="content__selection__title">Khám phá Việt Nam</h3>
-                <p class="content__selection__desc">Các điểm đến phổ biến này có nhiều điều chờ đón bạn</p>
-                <div class="content__selection__wrap">
-                    <a href="/layout/trend_layout/trend_hoian/" class="selection__wrap__item">
-                        <img src="./assets/img/main_img/content_explore/tphcm.jpg" alt="" class="selection__wrap__item__img">
-                        <h3 class="selection__wrap__item__title">TP. Hồ Chí Minh</h3>
-                        <p class="selection__wrap__item__infor">4.657 chỗ nghỉ</p>
-                    </a>
-                    <a href="/layout/trend_layout/trend_hoian/" class="selection__wrap__item">
-                        <img src="./assets/img/main_img/content_explore/hanoi.jpg" alt="" class="selection__wrap__item__img">
-                        <h3 class="selection__wrap__item__title">Hà Nội</h3>
-                        <p class="selection__wrap__item__infor">3.452 chỗ nghỉ</p>
-                    </a>
-                    <a href="/layout/trend_layout/trend_hoian/" class="selection__wrap__item">
-                        <img src="./assets/img/main_img/content_explore/danang.jpg" alt="" class="selection__wrap__item__img">
-                        <h3 class="selection__wrap__item__title">Đà Nẵng</h3>
-                        <p class="selection__wrap__item__infor">1.489 chỗ nghỉ</p>
-                    </a>
-                    <a href="/layout/trend_layout/trend_hoian/" class="selection__wrap__item">
-                        <img src="./assets/img/main_img/content_explore/halong.jpg" alt="" class="selection__wrap__item__img">
-                        <h3 class="selection__wrap__item__title">Hạ Long</h3>
-                        <p class="selection__wrap__item__infor">6.786 chỗ nghỉ</p>
-                    </a>
-                    <a href="/layout/trend_layout/trend_hoian/" class="selection__wrap__item">
-                        <img src="./assets/img/main_img/content_explore/camau.jpg" alt="" class="selection__wrap__item__img">
-                        <h3 class="selection__wrap__item__title">Cà Mau</h3>
-                        <p class="selection__wrap__item__infor">2.827 chỗ nghỉ</p>
-                    </a>
-                    <a href="/layout/trend_layout/trend_hoian/" class="selection__wrap__item">
-                        <img src="./assets/img/main_img/content_explore/bangkok.jpg" alt="" class="selection__wrap__item__img">
-                        <h3 class="selection__wrap__item__title">Bangkok</h3>
-                        <p class="selection__wrap__item__infor">951 chỗ nghỉ</p>
-                    </a>
-                    <div class="content__selection__next">
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </div>
-                </div>
-            </div>
-            <!-- SearchBy -->
-            <div class="content__selection ">
-                <h3 class="content__selection__title ">Tìm theo loại chỗ nghỉ ở Hà Nội</h3>
-                <div class="content__selection__wrap">
-                    <a href="/layout/searchby_layout/canho/index.html" class="selection__wrap__item ">
-                        <img src="./assets/img/main_img/content_searchby/canho.jpg" alt="" class="selection__wrap__item__img ">
-                        <h3 class="selection__wrap__item__title ">Căn hộ</h3>
-                        <p class="selection__wrap__item__desc ">Dành cho các cặp đôi thích Penhouse</p>
-                        <p class="selection__wrap__item__infor ">Còn 1.489 chỗ nghỉ trống</p>
-                    </a>
-                    <a href="/layout/searchby_layout/canho/index.html" class="selection__wrap__item ">
-                        <img src="./assets/img/main_img/content_searchby/chungcu.jpg" alt="" class="selection__wrap__item__img ">
-                        <h3 class="selection__wrap__item__title ">Chung cư</h3>
-                        <p class="selection__wrap__item__desc ">Chung cu 2 phòng ngủ 1 phòng khách</p>
-                        <p class="selection__wrap__item__infor ">Còn 2.679 chỗ nghỉ trống</p>
-                    </a>
-                    <a href="/layout/searchby_layout/canho/index.html" class="selection__wrap__item ">
-                        <img src="./assets/img/main_img/content_searchby/bietthu.jpg" alt="" class="selection__wrap__item__img ">
-                        <h3 class="selection__wrap__item__title ">Biệt thự</h3>
-                        <p class="selection__wrap__item__desc ">Phù hợp với Richkid</p>
-                        <p class="selection__wrap__item__infor ">Còn 209 chỗ nghỉ trống</p>
-                    </a>
-                    <a href="/layout/searchby_layout/canho/index.html" class="selection__wrap__item ">
-                        <img src="./assets/img/main_img/content_searchby/laudai.jpg" alt="" class="selection__wrap__item__img ">
-                        <h3 class="selection__wrap__item__title ">Lâu đài</h3>
-                        <p class="selection__wrap__item__desc ">Siêu phù hợp với người mộng mer</p>
-                        <p class="selection__wrap__item__infor ">Còn 306 chỗ nghỉ trống</p>
-                    </a>
-                    <div class="content__selection__next content__searchby__next">
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </div>
-                </div>
-            </div>
-            <!-- TopRank content -->
-            <div class="content__selection">
-                <h3 class="content__selection__title">Điểm đến hàng đầu cho kỳ nghỉ tiếp theo của bạn</h3>
-                <p class="content__selection__desc">Đây là địa điểm thu hút nhiều khách du lịch</p>
-                <div class="content__selection__wrap">
-                    <a href="/layout/trend_layout/trend_hoian/" class="selection__wrap__item content__toprank">
-                        <img src="./assets/img/main_img/content_toprank/tokyo.jpg" alt="" class="selection__wrap__item__img">
-                        <h3 class="selection__wrap__item__title">Tokyo, Nhật Bản</h3>
-                    </a>
-                    <a href="/layout/trend_layout/trend_hoian/" class="selection__wrap__item content__toprank">
-                        <img src="./assets/img/main_img/content_toprank/singapo.jpg" alt="" class="selection__wrap__item__img">
-                        <h3 class="selection__wrap__item__title">Singapore, Singapore</h3>
-                    </a>
-                    <a href="/layout/trend_layout/trend_hoian/" class="selection__wrap__item content__toprank">
-                        <img src="./assets/img/main_img/content_toprank/hanoi.jpg" alt="" class="selection__wrap__item__img">
-                        <h3 class="selection__wrap__item__title">Hà Nội, Việt Nam</h3>
-                    </a>
-                    <a href="/layout/trend_layout/trend_hoian/" class="selection__wrap__item content__toprank">
-                        <img src="./assets/img/main_img/content_toprank/seoul.jpg" alt="" class="selection__wrap__item__img">
-                        <h3 class="selection__wrap__item__title">Seoul, Hàn Quốc</h3>
-                    </a>
-                    <div class="content__selection__next content__toprank__next">
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </div>
-                </div>
-            </div>
-            <!-- FindActive content -->
-            <div class="content__selection">
-                <h3 class="content__selection__title">Tìm hoạt động ở...</h3>
-                <div class="content__selection__wrap">
-                    <a href="" class="selection__wrap__item content__findacctive">
-                        <img src="./assets/img/main_img/content_findactitivies/paris.jpg" alt="" class="selection__wrap__item__img">
-                        <div class="selection__wrap__item__text">
-                            <h3 class="selection__wrap__item__title content__findacctive__title">Paris</h3>
-                            <p class="selection__wrap__item__desc content__findacctive__desc">2200+ hoạt động</p>
+                            <p class="hightline__item__wrap__priceInfo">Giá mỗi đêm chưa gồm thuế và phí</p>
+                            <p class="hightline__item__wrap__price">VND 449.737</p>
                         </div>
-                    </a>
-                    <a href="" class="selection__wrap__item content__findacctive">
-                        <img src="./assets/img/main_img/content_findactitivies/tokyo.jpg" alt="" class="selection__wrap__item__img">
-                        <div class="selection__wrap__item__text">
-                            <h3 class="selection__wrap__item__title content__findacctive__title">Tokyo</h3>
-                            <p class="selection__wrap__item__desc content__findacctive__desc">1800+ hoạt động</p>
-                        </div>
-                    </a>
-                    <a href="" class="selection__wrap__item content__findacctive">
-                        <img src="./assets/img/main_img/content_findactitivies/seoul.jpg" alt="" class="selection__wrap__item__img">
-                        <div class="selection__wrap__item__text">
-                            <h3 class="selection__wrap__item__title content__findacctive__title">Seoul</h3>
-                            <p class="selection__wrap__item__desc content__findacctive__desc">2780+ hoạt động</p>
-                        </div>
-                    </a>
-                    <a href="" class="selection__wrap__item content__findacctive">
-                        <img src="./assets/img/main_img/content_findactitivies/hongkong.jpg" alt="" class="selection__wrap__item__img">
-                        <div class="selection__wrap__item__text">
-                            <h3 class="selection__wrap__item__title content__findacctive__title">Hongkong</h3>
-                            <p class="selection__wrap__item__desc content__findacctive__desc">132   0+ hoạt động</p>
-                        </div>
-                    </a>
-                    <div class="content__selection__next content__findacctive__next">
-                        <i class="fa-solid fa-chevron-right"></i>
                     </div>
-                </div>
-            </div>
-            <!-- Hightlight Content -->
-            <div class="hightline__content">
-                <h3 class="content__selection__title">Những chỗ nghỉ nổi bật được đề xuất cho quý khách</h3>
-                <p class="content__selection__desc">Từ biệt thự, lâu đài cho đến nhà thuyền, nhà triệt, chúng tôi đều có hết</p>
-                <div class="grid wide container">
-                    <div class="row">
-                        <a href="" class="hightline__item col c-6 l-3 m-4">
-                            <div class="hightline__item__container">
-                                <img src="./assets/img/main_img/content_hightline/1.jpg" alt="" class="hightline__item__img">
-                                <div class="hightline__item__wrap">
-                                    <h3 class="hightline__item__wrap__title">Nhà của Thóc - CSJ Tower Vũng Tàu</h3>
-                                    <div class="hightline__item__wrap__info">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-location-dot hightline__item__wrap__location__icon"></i>
-                                        <p class="hightline__item__wrap__info__location">Vũng Tàu</p>
-                                    </div>
-                                    <p class="hightline__item__wrap__priceInfo">Giá mỗi đêm chưa gồm thuế và phí</p>
-                                    <p class="hightline__item__wrap__price">VND 449.737</p>
-                                </div>
+                </a>
+                <a href="/roomdetail" class="hightline__item">
+                    <div class="hightline__item__container">
+                        <img src="./assets/img/main_img/content_hightline/6.jpg" alt="" class="hightline__item__img">
+                        <div class="hightline__item__wrap">
+                            <h3 class="hightline__item__wrap__title">45 Corvin Luxury Hotel - Hạ Long Bay</h3>
+                            <div class="hightline__item__wrap__info">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-location-dot hightline__item__wrap__location__icon"></i>
+                                <p class="hightline__item__wrap__info__location">Hạ Long</p>
                             </div>
-                        </a>
-                        <a href="" class="hightline__item col c-6 l-3 m-4">
-                            <div class="hightline__item__container">
-                                <img src="./assets/img/main_img/content_hightline/6.jpg" alt="" class="hightline__item__img">
-                                <div class="hightline__item__wrap">
-                                    <h3 class="hightline__item__wrap__title">45 Corvin Luxury Hotel - Hạ Long Bay</h3>
-                                    <div class="hightline__item__wrap__info">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-location-dot hightline__item__wrap__location__icon"></i>
-                                        <p class="hightline__item__wrap__info__location">Hạ Long</p>
-                                    </div>
-                                    <p class="hightline__item__wrap__priceInfo">Giá mỗi đêm chưa gồm thuế và phí</p>
-                                    <p class="hightline__item__wrap__price">VND 459.788</p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="" class="hightline__item col c-6 l-3 m-4">
-                            <div class="hightline__item__container">
-                                <img src="./assets/img/main_img/content_hightline/3.jpg" alt="" class="hightline__item__img">
-                                <div class="hightline__item__wrap">
-                                    <h3 class="hightline__item__wrap__title">Khách sạn Zelda (ZELDA Hotel)</h3>
-                                    <div class="hightline__item__wrap__info">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-location-dot hightline__item__wrap__location__icon"></i>
-                                        <p class="hightline__item__wrap__info__location">Vũng Tàu</p>
-                                    </div>
-                                    <p class="hightline__item__wrap__priceInfo">Giá mỗi đêm chưa gồm thuế và phí</p>
-                                    <p class="hightline__item__wrap__price">VND 749.777</p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="" class="hightline__item col c-6 l-3 m-4">
-                            <div class="hightline__item__container">
-                                <img src="./assets/img/main_img/content_hightline/4.jpg" alt="" class="hightline__item__img">
-                                <div class="hightline__item__wrap">
-                                    <h3 class="hightline__item__wrap__title">20 Hotel and Apartment Hà Nội</h3>
-                                    <div class="hightline__item__wrap__info">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-location-dot hightline__item__wrap__location__icon"></i>
-                                        <p class="hightline__item__wrap__info__location">Hà Nội</p>
-                                    </div>
-                                    <p class="hightline__item__wrap__priceInfo">Giá mỗi đêm chưa gồm thuế và phí</p>
-                                    <p class="hightline__item__wrap__price">VND 449.737</p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="" class="hightline__item col c-6 l-3 m-4">
-                            <div class="hightline__item__container">
-                                <img src="./assets/img/main_img/content_hightline/5.jpg" alt="" class="hightline__item__img">
-                                <div class="hightline__item__wrap">
-                                    <h3 class="hightline__item__wrap__title">Khách sạn Memory Legends Garena</h3>
-                                    <div class="hightline__item__wrap__info">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-location-dot hightline__item__wrap__location__icon"></i>
-                                        <p class="hightline__item__wrap__info__location">Hạ Long</p>
-                                    </div>
-                                    <p class="hightline__item__wrap__priceInfo">Giá mỗi đêm chưa gồm thuế và phí</p>
-                                    <p class="hightline__item__wrap__price">VND 681.737</p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="" class="hightline__item col c-6 l-3 m-4">
-                            <div class="hightline__item__container">
-                                <img src="./assets/img/main_img/content_hightline/2.jpg" alt="" class="hightline__item__img">
-                                <div class="hightline__item__wrap">
-                                    <h3 class="hightline__item__wrap__title">Bray Ex hate me Luxury Hotel - Ba Đình</h3>
-                                    <div class="hightline__item__wrap__info">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-location-dot hightline__item__wrap__location__icon"></i>
-                                        <p class="hightline__item__wrap__info__location">Ba Đình</p>
-                                    </div>
-                                    <p class="hightline__item__wrap__priceInfo">Giá mỗi đêm chưa gồm thuế và phí</p>
-                                    <p class="hightline__item__wrap__price">VND 437.844</p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="" class="hightline__item col c-6 l-3 m-4">
-                            <div class="hightline__item__container">
-                                <img src="./assets/img/main_img/content_hightline/7.jpg" alt="" class="hightline__item__img">
-                                <div class="hightline__item__wrap">
-                                    <h3 class="hightline__item__wrap__title">Holiday is Saturday and Sunday Hotel</h3>
-                                    <div class="hightline__item__wrap__info">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-location-dot hightline__item__wrap__location__icon"></i>
-                                        <p class="hightline__item__wrap__info__location">Hà Nội</p>
-                                    </div>
-                                    <p class="hightline__item__wrap__priceInfo">Giá mỗi đêm chưa gồm thuế và phí</p>
-                                    <p class="hightline__item__wrap__price">VND  749.337</p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="" class="hightline__item col c-6 l-3 m-4">
-                            <div class="hightline__item__container">
-                                <img src="./assets/img/main_img/content_hightline/8.jpg" alt="" class="hightline__item__img">
-                                <div class="hightline__item__wrap">
-                                    <h3 class="hightline__item__wrap__title">Căn Hộ Dịch Vụ MOON West Lake</h3>
-                                    <div class="hightline__item__wrap__info">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-location-dot hightline__item__wrap__location__icon"></i>
-                                        <p class="hightline__item__wrap__info__location">Hà Nội</p>
-                                    </div>
-                                    <p class="hightline__item__wrap__priceInfo">Giá mỗi đêm chưa gồm thuế và phí</p>
-                                    <p class="hightline__item__wrap__price">VND 544.385</p>
-                                </div>
-                            </div>
-                        </a>
-                
+                            <p class="hightline__item__wrap__priceInfo">Giá mỗi đêm chưa gồm thuế và phí</p>
+                            <p class="hightline__item__wrap__price">VND 459.788</p>
+                        </div>
                     </div>
-
-                </div>
-                <button class="hightline__btn">Xem thêm các chỗ nghỉ</button>
-            </div>
-            <!-- Content Review -->
-            <div class="content__review__container grid wide container">
-                <h3 class="content__review__wrap__title">Khách hàng đánh giá về dtravel.com</h3>
-                
-                <ul class="content__review__wrap row">
-                    <li class="content__review__item l-4 c-12 m-6">
-                        <div class="__content__review__item_info">
-                            <h3 class="content__review__title">Nhà nghỉ Ba Đình</h3>
-                            <p class="content__review__location">ở Hà Nội</p>
-                            <p class="content__review__text">Nơi đây hoàn toàn giống như hình ảnh đăng trên dtravel. Dịch vụ cực tốt, phục vụ cực cutie chúng tôi đã có 1 kỳ nghỉ tuyệt vời!</p>
-                            <p class="content__review__author">- ThePhach from <span style="background-color: yellow; padding: 2px 5px; font-weight: bold;">"IELTS Fighter"</span></p>
-
+                </a>
+                <a href="/roomdetail" class="hightline__item">
+                    <div class="hightline__item__container">
+                        <img src="./assets/img/main_img/content_hightline/3.jpg" alt="" class="hightline__item__img">
+                        <div class="hightline__item__wrap">
+                            <h3 class="hightline__item__wrap__title">Khách sạn Zelda (ZELDA Hotel)</h3>
+                            <div class="hightline__item__wrap__info">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-location-dot hightline__item__wrap__location__icon"></i>
+                                <p class="hightline__item__wrap__info__location">Vũng Tàu</p>
+                            </div>
+                            <p class="hightline__item__wrap__priceInfo">Giá mỗi đêm chưa gồm thuế và phí</p>
+                            <p class="hightline__item__wrap__price">VND 749.777</p>
                         </div>
-                    </li>
-                    <li class="content__review__item l-4 c-12 m-6">
-                        <div class="__content__review__item_info">
-                            <h3 class="content__review__title">Biệt thự Homestay</h3>
-                            <p class="content__review__location">ở Vũng Tàu</p>
-                            <p class="content__review__text">Tôi hoàn toàn hài lòng khi nghỉ tại Vũng Tàu. Cám ơn Triendzai rất nhiều.</p>
-                            <p class="content__review__author">- VanLuu from PhiaDongNuocAnh</p>
+                    </div>
+                </a>
+                <a href="/roomdetail" class="hightline__item">
+                    <div class="hightline__item__container">
+                        <img src="./assets/img/main_img/content_hightline/4.jpg" alt="" class="hightline__item__img">
+                        <div class="hightline__item__wrap">
+                            <h3 class="hightline__item__wrap__title">20 Hotel and Apartment Hà Nội</h3>
+                            <div class="hightline__item__wrap__info">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-location-dot hightline__item__wrap__location__icon"></i>
+                                <p class="hightline__item__wrap__info__location">Hà Nội</p>
+                            </div>
+                            <p class="hightline__item__wrap__priceInfo">Giá mỗi đêm chưa gồm thuế và phí</p>
+                            <p class="hightline__item__wrap__price">VND 449.737</p>
                         </div>
-                    </li>
-                    <li class="content__review__item l-4 c-12 m-6">
-                        <div class="__content__review__item_info">
-                            <h3 class="content__review__title">Biệt thự Quận 1 ProMax</h3>
-                            <p class="content__review__location">ở TP. Hồ Chí Minh</p>
-                            <p class="content__review__text">Bước vào biệt thự, tôi cứ ngỡ mình đang ở thiên đường vậy, mọi thứ quá đỗi đẹp đẽ. Cảm ơn Triendzai đã tạo ra 1 nền tảng tuyệt vời để đặt phòng du lịch này.</p>
-                            <p class="content__review__author">- DangDich from Future</p>
+                    </div>
+                </a>
+                <a href="/roomdetail" class="hightline__item">
+                    <div class="hightline__item__container">
+                        <img src="./assets/img/main_img/content_hightline/5.jpg" alt="" class="hightline__item__img">
+                        <div class="hightline__item__wrap">
+                            <h3 class="hightline__item__wrap__title">Khách sạn Memory Legends Garena</h3>
+                            <div class="hightline__item__wrap__info">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-location-dot hightline__item__wrap__location__icon"></i>
+                                <p class="hightline__item__wrap__info__location">Hạ Long</p>
+                            </div>
+                            <p class="hightline__item__wrap__priceInfo">Giá mỗi đêm chưa gồm thuế và phí</p>
+                            <p class="hightline__item__wrap__price">VND 681.737</p>
                         </div>
-                    </li>
-                </ul>
-            </div>
+                    </div>
+                </a>
+                <a href="/roomdetail" class="hightline__item">
+                    <div class="hightline__item__container">
+                        <img src="./assets/img/main_img/content_hightline/2.jpg" alt="" class="hightline__item__img">
+                        <div class="hightline__item__wrap">
+                            <h3 class="hightline__item__wrap__title">Bray Ex hate me Luxury Hotel - Ba Đình</h3>
+                            <div class="hightline__item__wrap__info">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-location-dot hightline__item__wrap__location__icon"></i>
+                                <p class="hightline__item__wrap__info__location">Ba Đình</p>
+                            </div>
+                            <p class="hightline__item__wrap__priceInfo">Giá mỗi đêm chưa gồm thuế và phí</p>
+                            <p class="hightline__item__wrap__price">VND 437.844</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="/roomdetail" class="hightline__item">
+                    <div class="hightline__item__container">
+                        <img src="./assets/img/main_img/content_hightline/7.jpg" alt="" class="hightline__item__img">
+                        <div class="hightline__item__wrap">
+                            <h3 class="hightline__item__wrap__title">Holiday is Saturday and Sunday Hotel</h3>
+                            <div class="hightline__item__wrap__info">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-location-dot hightline__item__wrap__location__icon"></i>
+                                <p class="hightline__item__wrap__info__location">Hà Nội</p>
+                            </div>
+                            <p class="hightline__item__wrap__priceInfo">Giá mỗi đêm chưa gồm thuế và phí</p>
+                            <p class="hightline__item__wrap__price">VND 749.337</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="/roomdetail" class="hightline__item">
+                    <div class="hightline__item__container">
+                        <img src="./assets/img/main_img/content_hightline/8.jpg" alt="" class="hightline__item__img">
+                        <div class="hightline__item__wrap">
+                            <h3 class="hightline__item__wrap__title">Căn Hộ Dịch Vụ MOON West Lake</h3>
+                            <div class="hightline__item__wrap__info">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-location-dot hightline__item__wrap__location__icon"></i>
+                                <p class="hightline__item__wrap__info__location">Hà Nội</p>
+                            </div>
+                            <p class="hightline__item__wrap__priceInfo">Giá mỗi đêm chưa gồm thuế và phí</p>
+                            <p class="hightline__item__wrap__price">VND 544.385</p>
+                        </div>
+                    </div>
+                </a>
 
 
         </div>
+            <button class="hightline__btn">Xem thêm các chỗ nghỉ</button>
+        </div>
+        <!-- Content Review -->
+        <div class="content__divided"></div>
+        <div class="content__review__container">
+            <h3 class="content__review__wrap__title">Khách hàng đánh giá về dtravel.com</h3>
+
+            <ul class="content__review__wrap">
+                <li class="content__review__item">
+                    <div class="__content__review__item_info">
+                        <h3 class="content__review__title">Nhà nghỉ Ba Đình</h3>
+                        <p class="content__review__location">ở Hà Nội</p>
+                        <p class="content__review__text">Nơi đây hoàn toàn giống như hình ảnh đăng trên dtravel. Dịch vụ
+                            cực
+                            tốt, phục vụ cực cutie chúng tôi đã có 1 kỳ nghỉ tuyệt vời!</p>
+                        <p class="content__review__author">- ThePhach from <span
+                                style="background-color: yellow; padding: 2px 5px; font-weight: bold;">"IELTS
+                                Fighter"</span></p>
+
+                    </div>
+                </li>
+                <li class="content__review__item">
+                    <div class="__content__review__item_info">
+                        <h3 class="content__review__title">Biệt thự Homestay</h3>
+                        <p class="content__review__location">ở Vũng Tàu</p>
+                        <p class="content__review__text">Tôi hoàn toàn hài lòng khi nghỉ tại Vũng Tàu. Cám ơn Triendzai
+                            rất
+                            nhiều.</p>
+                        <p class="content__review__author">- VanLuu from PhiaDongNuocAnh</p>
+                    </div>
+                </li>
+                <li class="content__review__item">
+                    <div class="__content__review__item_info">
+                        <h3 class="content__review__title">Biệt thự Quận 1 ProMax</h3>
+                        <p class="content__review__location">ở TP. Hồ Chí Minh</p>
+                        <p class="content__review__text">Bước vào biệt thự, tôi cứ ngỡ mình đang ở thiên đường vậy, mọi
+                            thứ
+                            quá đỗi đẹp đẽ. Cảm ơn Triendzai đã tạo ra 1 nền tảng tuyệt vời để đặt phòng du lịch này.
+                        </p>
+                        <p class="content__review__author">- DangDich from Future</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
 
 
 
 
 
 
-        <div id="subFooter">
-            <!-- Sign up -->
-            <div class="subFooter__signup">
-                <h3 class="subFooter__title">Tiết kiệm thời gian và tiền bạc!</h3>
-                <p class="subFooter__desc">Hãy đăng ký và chúng tôi sẽ gửi những ưu đãi tốt nhất cho bạn.</p>
-                <div class="subFooter__input">
-                    <input type="email" placeholder="Địa chỉ email của bạn">
-                    <button class="subFooter__submit">Đăng ký</button>
-                </div>
-                <p class="subFooter__info">Bạn có thể ngừng đăng kí bất kì lúc nào. Xem <a href="" class="subFooter__info__link">Chính sách bảo mật</a> của chúng tôi.</p>
+    <div id="subFooter">
+        <!-- Sign up -->
+        <div class="subFooter__signup">
+            <h3 class="subFooter__title">Tiết kiệm thời gian và tiền bạc!</h3>
+            <p class="subFooter__desc">Hãy đăng ký và chúng tôi sẽ gửi những ưu đãi tốt nhất cho bạn.</p>
+            <div class="subFooter__input">
+                <input type="email" placeholder="Địa chỉ email của bạn">
+                <button class="subFooter__submit">Đăng ký</button>
             </div>
-            <!-- Upload -->
-            <div class="subFooter__upload">
-                <button class="subFooter__upload__btn">Đăng chỗ nghỉ của bạn!</button>
-            </div>
-            <!-- Nav -->
-            <ul class="subFooter__nav">
-                <li><a href="" class="subFooter__nav__item">Phiên bản di động</a></li>
-                <li><a href="" class="subFooter__nav__item">Tài khoản của bạn</a></li>
-                <li><a href="" class="subFooter__nav__item">Dịch vụ của chúng tôi</a></li>
-                <li><a href="" class="subFooter__nav__item">Trở thành đối tác</a></li>
-                <li><a href="" class="subFooter__nav__item">Tìm máy bay</a></li>
-                <li><a href="" class="subFooter__nav__item">Đặt nhà hàng</a></li>
-                <li><a href="" class="subFooter__nav__item">Thay đổi quốc gia</a></li>
-                <li><a href="" class="subFooter__nav__item">Đánh giá của khác hàng</a></li>
+            <p class="subFooter__info">Bạn có thể ngừng đăng kí bất kì lúc nào. Xem <a href=""
+                    class="subFooter__info__link">Chính sách bảo mật</a> của chúng tôi.</p>
+        </div>
+        <!-- Upload -->
+        <div class="subFooter__upload">
+            <button class="subFooter__upload__btn">Đăng chỗ nghỉ của bạn!</button>
+        </div>
+        <!-- Nav -->
+        <ul class="subFooter__nav hiden-in-mobile-tablet">
+            <li><a href="" class="subFooter__nav__item">Phiên bản di động</a></li>
+            <li><a href="" class="subFooter__nav__item">Tài khoản của bạn</a></li>
+            <li><a href="" class="subFooter__nav__item">Dịch vụ của chúng tôi</a></li>
+            <li><a href="" class="subFooter__nav__item">Trở thành đối tác</a></li>
+            <li><a href="" class="subFooter__nav__item">Tìm máy bay</a></li>
+            <li><a href="" class="subFooter__nav__item">Đặt nhà hàng</a></li>
+            <li><a href="" class="subFooter__nav__item">Thay đổi quốc gia</a></li>
+            <li><a href="" class="subFooter__nav__item">Đánh giá của khác hàng</a></li>
+        </ul>
+    </div>
+
+
+    <div id="footer">
+        <!-- Footer Text -->
+        <div class="footer__text">
+            <ul class="footer__text__list">
+                <h3 class="footer__text__title">Việt Nam</h3>
+                <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Khách Sạn Hạ Long</a>
+                </li>
+                <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Khách Sạn Sầm Sơn</a>
+                </li>
+                <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Khách Sạn Đà Nẵng</a>
+                </li>
+                <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Khách Sạn TP. Hồ Chí
+                        Minh</a></li>
+                <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Khách Sạn Hà Nội</a>
+                </li>
+                <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Khách Sạn Nghệ An</a>
+                </li>
+                <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Khách Sạn Cà Mau</a>
+                </li>
+            </ul>
+            <ul class="footer__text__list">
+                <h3 class="footer__text__title">Châu Phi</h3>
+                <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Khách Sạn Morocco</a>
+                </li>
+                <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Khách Sạn Nam Phi</a>
+                </li>
+                <h3 class="footer__text__title">Cẩm nang Đích đến</h3>
+                <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Cẩm nang Đích đến</a>
+                </li>
+                <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Diễn đàn Đích đến</a>
+                </li>
+            </ul>
+            <ul class="footer__text__list">
+                <h3 class="footer__text__title">Châu Âu</h3>
+                <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Khách Sạn Áo</a></li>
+                <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Khách Sạn Cộng Hòa
+                        Séc</a>
+                </li>
+                <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Khách Sạn Đan Mạch</a>
+                </li>
+                <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Khách Sạn Pháp</a>
+                </li>
+                <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Khách Sạn Đức</a></li>
+                <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Khách Sạn Hi Lạp</a>
+                </li>
+                <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Khách Sạn Hungary</a>
+                </li>
+                <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Khách Sạn Ai-len</a>
+                </li>
+                <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Khách Sạn Hà Lan</a>
+                </li>
+            </ul>
+            <ul class="footer__text__list">
+                <h3 class="footer__text__title">Căn hộ Châu Á</h3>
+                <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Căn hộ Băng Cốc</a>
+                </li>
+                <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Căn hộ Osaka</a></li>
+                <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Căn hộ Tokyo</a></li>
+                <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Căn hộ Manila</a></li>
+            </ul>
+            <ul class="footer__text__list">
+                <h3 class="footer__text__title">Biệt thự Châu Á</h3>
+                <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Biệt thự Bali</a></li>
+                <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Biệt thự Phuket</a>
+                </li>
+                <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Biệt thự Seoul</a>
+                </li>
+            </ul>
+            <ul class="footer__text__list">
+                <h3 class="footer__text__title">Nhà trệt Châu Á</h3>
+                <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Nhà trệt Bali</a></li>
+                <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Nhà trệt đảo Phú
+                        Quốc</a>
+                </li>
             </ul>
         </div>
 
-
-        <div id="footer">
-            <!-- Footer Text -->
-            <div class="footer__text">
-                <ul class="footer__text__list">
-                    <h3 class="footer__text__title">Việt Nam</h3>
-                    <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Khách Sạn Hạ Long</a></li>
-                    <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Khách Sạn Sầm Sơn</a></li>
-                    <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Khách Sạn Đà Nẵng</a></li>
-                    <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Khách Sạn TP. Hồ Chí Minh</a></li>
-                    <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Khách Sạn Hà Nội</a></li>
-                    <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Khách Sạn Nghệ An</a></li>
-                    <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Khách Sạn Cà Mau</a></li>
-                </ul>
-                <ul class="footer__text__list">
-                    <h3 class="footer__text__title">Châu Phi</h3>
-                    <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Khách Sạn Morocco</a></li>
-                    <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Khách Sạn Nam Phi</a></li>
-                    <h3 class="footer__text__title">Cẩm nang Đích đến</h3>
-                    <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Cẩm nang Đích đến</a></li>
-                    <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Diễn đàn Đích đến</a></li>
-                </ul>
-                <ul class="footer__text__list">
-                    <h3 class="footer__text__title">Châu Âu</h3>
-                    <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Khách Sạn Áo</a></li>
-                    <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Khách Sạn Cộng Hòa Séc</a></li>
-                    <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Khách Sạn Đan Mạch</a></li>
-                    <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Khách Sạn Pháp</a></li>
-                    <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Khách Sạn Đức</a></li>
-                    <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Khách Sạn Hi Lạp</a></li>
-                    <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Khách Sạn Hungary</a></li>
-                    <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Khách Sạn Ai-len</a></li>
-                    <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Khách Sạn Hà Lan</a></li>
-                </ul>
-                <ul class="footer__text__list">
-                    <h3 class="footer__text__title">Căn hộ Châu Á</h3>
-                    <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Căn hộ Băng Cốc</a></li>
-                    <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Căn hộ Osaka</a></li>
-                    <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Căn hộ Tokyo</a></li>
-                    <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Căn hộ Manila</a></li>
-                </ul>
-                <ul class="footer__text__list">
-                    <h3 class="footer__text__title">Biệt thự Châu Á</h3>
-                    <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Biệt thự Bali</a></li>
-                    <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Biệt thự Phuket</a></li>
-                    <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Biệt thự Seoul</a></li>
-                    <h3 class="footer__text__title">Nhà trệt Châu Á</h3>
-                    <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Nhà trệt Bali</a></li>
-                    <li><a href="/layout/searchby_layout/canho/index.html" class="footer__text__item">Nhà trệt đảo Phú Quốc</a></li>
-                </ul>
-            </div>
-
-            <!-- Footer About -->
-            <div class="footer__about">
-                <p class="footer__about__text">© 2024 Tripadvisor LLC</p>
-                <p class="footer__about__text">Đây là phiên bản trang web dành cho người sử dụng Tiếng Việt tại Việt Nam. Nếu bạn ở tại quốc gia hoặc vùng lãnh thổ khác, vui lòng chọn phiên bản Tripadvisor phù hợp với quốc gia hoặc vùng lãnh thổ của mình trong menu thả xuống.</p>
-                <p class="footer__about__ending">This is Group 8's project ♡</p>
-				<p class="footer__about__ending">Demo: 20/4/2024</p>
-            </div>
-
+        <!-- Footer About -->
+        <div class="footer__about">
+            <p class="footer__about__text">© 2024 Tripadvisor LLC</p>
+            <p class="footer__about__text">Đây là phiên bản trang web dành cho người sử dụng Tiếng Việt tại Việt Nam.
+                Nếu
+                bạn ở tại quốc gia hoặc vùng lãnh thổ khác, vui lòng chọn phiên bản Tripadvisor phù hợp với quốc gia
+                hoặc
+                vùng lãnh thổ của mình trong menu thả xuống.</p>
+            <p class="footer__about__ending">This is Group 8's project ♡</p>
+            <p class="footer__about__ending">Update at 21:20 in 1/5/2024</p>
         </div>
-        <div class="downloadapp">
-            <i class="fa-solid fa-down-long"></i>
-            <h3 class="downloadapp__title">Tải ứng dụng Dtravel</h3>
-        </div>
-        <script>
-            console.log("12"+ 35.5)
-        </script>
-    </body>
-    </html>
+
+    </div>
+    <div class="downloadapp hiden-in-mobile-tablet">
+        <i class="fa-solid fa-down-long"></i>
+        <h3 class="downloadapp__title">Tải ứng dụng Dtravel</h3>
+    </div>
+    <script>
+
+        const overlay = document.querySelector('.overlay')
+
+        // HOME - HeaderBarsHandler
+
+        const headerBar = document.querySelector('.header-bars')
+        const navMobileTable = document.querySelector('.nav-tablet-mobile')
+        headerBar.addEventListener('click', () => {
+            navMobileTable.classList.add('active')
+            overlay.style.display = 'block'
+        })
+
+        const navMobileTableClose = document.querySelector('.nav-mobile-tablet-close')
+        navMobileTableClose.addEventListener('click', () => {
+            navMobileTable.classList.remove('active')
+            overlay.style.display = 'none'
+        })
+
+        // LIEN HE DICH VU - ListHandler
+        const optionListBtns = document.querySelectorAll('.content__question__option__wrap')
+        optionListBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const ulListItem = btn.querySelector('.content__question__option__item');
+                const listDownIcon = btn.querySelector('.list-down-icon')
+                const listRightIcon = btn.querySelector('.list-right-icon')
+
+                if (ulListItem.classList.contains('active')) {
+                    ulListItem.classList.remove('active')
+                    listRightIcon.style.display = 'block'
+                    listDownIcon.style.display = 'none'
+                    return
+                }
+                ulListItem.classList.add('active')
+                listRightIcon.style.display = 'none'
+                listDownIcon.style.display = 'block'
+            })
+        })
+
+    </script>
+</body>
+
+</html>
