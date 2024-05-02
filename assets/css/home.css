@@ -11,6 +11,7 @@
     height: 15px;
     background-color: #bdbdbd47;
     border: 1.5px solid #bdbdbd30;
+    border-radius: 3px;
 }
 
 /* Search content */
@@ -120,7 +121,9 @@
 
 /* Best of choice content */
 .BestOfChoice {
+    margin-top: 20px;
     position: relative;
+    margin-bottom: 20px;
 }
 
 .BestOfChoice__img {
@@ -133,14 +136,14 @@
     width: 80%;
     position: absolute;
     bottom: 30px;
-    left: 30px;
+    left: 40px;
     color: var(--white-color);
 
 }
 
 .BestOfChoice__title {
     font-size: 4rem;
-    line-height: 4rem;
+    line-height: 4.2rem;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
 }
 
@@ -203,6 +206,8 @@
     margin: 0 10px;
     position: relative;
     text-decoration: none;
+    display: grid;
+    grid-template-columns: 1fr;
 
 }
 
@@ -232,17 +237,15 @@
     width: 30px;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
 }
-
 .trend__collum__item  h3 {
     margin: 30px 10px 30px 30px;
     font-size: 2.5rem;
     font-weight: bolder;
-    text-shadow: 0 0 3px var(--black-color);
+    text-shadow: 0 0 3px var(--black-color);    
 }
 
 .trend__collum__img {
-    width: 620px;
-    max-width: 100%;
+    width: 100%;
     border-radius: 10px;
 }
 
@@ -254,8 +257,7 @@
 /* Explore content */
 
 .content__selection {
-    margin: 0 10px;
-    margin-top: 30px;
+    margin: 0 20px 20px;
 }
 
 .content__selection__title {
@@ -420,6 +422,7 @@
     padding: 0 10px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 20px;
 }
 
 
@@ -434,10 +437,6 @@
 
 .hightline__item img {
     width: 100%;
-}
-
-.hightline__item__img {
-    width: 200px;
 }
 
 .hightline__item__wrap {
@@ -583,12 +582,14 @@
 
     .content__selection {
         margin: 0;
+        margin-bottom: 20px;
     }
 
     .content__selection__wrap {
         display: flex;
         overflow-x: auto;
-        padding: 0 10px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .content__selection__title, .content__selection__desc {
         margin-left: 20px;
@@ -642,15 +643,23 @@
         display: none;
     }
     .BestOfChoice {
-        margin-top: 20px;
+    }
+    .BestOfChoice__wrap {
+        bottom: 15px;
+        left: 30px;
     }
     .BestOfChoice__title {
-        font-size: 2rem;
-        line-height: 2.2rem;
+        font-size: 1.8rem;
+        line-height: 2rem;
         margin-bottom: 5px;
     }
     .BestOfChoice__desc {
         display: none;
+    }
+    .BestOfChoice__button {
+        width: 110px;
+        height: 35px;
+        font-size: 1.1rem;
     }
     
     /* Trend */
@@ -670,6 +679,11 @@
     .trend__collum__text img{
         margin-left: 5px;
         
+    }
+
+    /* Section */
+    .content__selection {
+        margin-bottom: 0;
     }
 
     /* Hightline */

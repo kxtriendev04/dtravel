@@ -509,7 +509,7 @@
                 </a>
 
 
-        </div>
+            </div>
             <button class="hightline__btn">Xem thêm các chỗ nghỉ</button>
         </div>
         <!-- Content Review -->
@@ -670,14 +670,13 @@
 
         <!-- Footer About -->
         <div class="footer__about">
-            <p class="footer__about__text">© 2024 Tripadvisor LLC</p>
+            <p class="footer__about__text">© 2024 DTravel LLC</p>
             <p class="footer__about__text">Đây là phiên bản trang web dành cho người sử dụng Tiếng Việt tại Việt Nam.
                 Nếu
-                bạn ở tại quốc gia hoặc vùng lãnh thổ khác, vui lòng chọn phiên bản Tripadvisor phù hợp với quốc gia
-                hoặc
+                bạn ở tại quốc gia hoặc vùng lãnh thổ khác, vui lòng chọn phiên bản Dtravel phù hợp với quốc gia hoặc
                 vùng lãnh thổ của mình trong menu thả xuống.</p>
             <p class="footer__about__ending">This is Group 8's project ♡</p>
-            <p class="footer__about__ending">Update at 21:20 in 1/5/2024</p>
+            <p>UPDATE 2/5/2024</p>
         </div>
 
     </div>
@@ -685,7 +684,39 @@
         <i class="fa-solid fa-down-long"></i>
         <h3 class="downloadapp__title">Tải ứng dụng Dtravel</h3>
     </div>
+
+
     <script>
+
+
+
+        // Navigation
+        const aLinkItems = document.querySelectorAll('.nav__item')
+        aLinkItems.forEach(a => {
+            a.onclick = function (e) {
+                e.preventDefault()
+                const aLinkItemSelected = document.querySelector('.nav__item.nav__selected')
+                aLinkItemSelected.classList.remove('nav__selected')
+                a.classList.add('nav__selected')
+            }
+        })
+
+        // SearchBy Navbar
+        const searchNavItems = document.querySelectorAll('.search__nav__item')
+        console.log(searchNavItems)
+        searchNavItems.forEach(a => {
+            a.onclick = function (e) {
+                e.preventDefault()
+                const aNavSearchSelected = document.querySelector('.search__nav__item.search__nav__selected')
+                aNavSearchSelected.classList.remove('search__nav__selected')
+                a.classList.add('search__nav__selected')
+            }
+        })
+
+
+
+
+
 
         const overlay = document.querySelector('.overlay')
 
@@ -696,6 +727,10 @@
         headerBar.addEventListener('click', () => {
             navMobileTable.classList.add('active')
             overlay.style.display = 'block'
+            overlay.onclick = () => {
+                navMobileTable.classList.remove('active')
+                overlay.style.display = 'none'
+            }
         })
 
         const navMobileTableClose = document.querySelector('.nav-mobile-tablet-close')
@@ -723,6 +758,7 @@
                 listDownIcon.style.display = 'block'
             })
         })
+
 
     </script>
 </body>
