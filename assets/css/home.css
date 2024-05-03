@@ -3,11 +3,13 @@
 #content {
     min-height: 1000px;
     margin: 0 15px;
-    
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .content__divided {
-    width: 100vw;
     height: 15px;
     background-color: #bdbdbd47;
     border: 1.5px solid #bdbdbd30;
@@ -64,6 +66,7 @@
 
 .search__nav__selected {
     border-bottom: 3px solid var(--black-color);
+    animation: fadeIn .3s ease;
 }
 
 .search__box {
@@ -257,7 +260,8 @@
 /* Explore content */
 
 .content__selection {
-    margin: 0 20px 20px;
+    margin: 0 10px 20px;
+    position: relative;
 }
 
 .content__selection__title {
@@ -274,16 +278,37 @@
 }
 
 .content__selection__wrap {
-    display: flex;
-    align-items: center;
     position: relative;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.content__selection__wrap::-webkit-scrollbar {
+    display: none;
 }
 
 .selection__wrap__item {
-    margin: 0 8px;
+    overflow: hidden;
+    margin: 0 10px;
     text-decoration: none;
     color: var(--black-color);
     line-height: 2.4rem;
+    width: 200px;
+}
+
+.explore__content .selection__wrap__item {
+    width: 240px;
+}
+
+.searchby__content .selection__wrap__item {
+    width: 220px;
+}
+
+
+.toprank__content .selection__wrap__item {
+    width: 230px;
 }
 
 .selection__wrap__item:hover {
@@ -292,7 +317,7 @@
 
 .selection__wrap__item__img {
     border-radius: 10px;
-    max-width: 100%;
+    width: 100%;
 }
 
 .selection__wrap__item__title {
@@ -312,7 +337,36 @@
     margin: 5px 0;
 
 }
-.content__selection__next {
+
+.section__btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--white-color);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    color: var(--black-color);
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+.section_btn_left {
+    left: -10px;
+}
+
+.section_btn_right {
+    right: -10px;
+}
+
+.searchby__content .section__btn {
+    top: 135px;
+}
+.toprank__content .section__btn {
+    top: 170px;
+}
+
+/* .content__selection__next {
     cursor: pointer;
     width: 35px;
     height: 35px;
@@ -323,7 +377,7 @@
     top: 45px;
     right: -10px;
     color: var(--black-color);
-
+    text-align: center;
     display: flex;
 }
 
@@ -334,7 +388,7 @@
 
 .content__selection__next:hover {
     background-color: rgb(245, 238, 229);
-}
+} */
 
 .content__searchby__next {
     top: 80px;
@@ -346,12 +400,17 @@
     position: relative;
 }
 
-.content__toprank h3 {
+.selection__wrap__text {
     position: absolute;
     bottom: 20px;
     left: 10px;
+    width: 200px;
+}
 
+.content__toprank h3 {
+    white-space: pre-wrap;
     font-size: 2.5rem;
+    line-height: 2.5rem;
     color: var(--white-color);
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
 }
@@ -386,6 +445,7 @@
     font-size: 2.5rem;
     margin-bottom: 10px;
     margin-left: 15px;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
 }
 
 .content__findacctive__desc {
@@ -590,12 +650,13 @@
         overflow-x: auto;
         padding-left: 10px;
         padding-right: 10px;
+        margin-bottom: 10px;
     }
     .content__selection__title, .content__selection__desc {
         margin-left: 20px;
     }
-
-    .selection__wrap__item__title {
+    .section__btn {
+        display: none;
     }
     .content__selection__wrap::-webkit-scrollbar {
         width: 0;
@@ -609,8 +670,11 @@
     .selection__wrap__item__desc {
         display: none;
     }
+    .selection__wrap__text {
+        position: static;
+        width: 100px;
+    }
     .content__toprank .selection__wrap__item__title {
-        position: static !important;
         color: var(--black-color);
         text-shadow: none;
         font-size: 1.6rem;
@@ -625,10 +689,12 @@
         background:none;
     
     }
+    /* Find Active */
     .content__findacctive__title {
         font-size: 1.6rem;
         margin-left: 0;
         margin-bottom: 0;
+        text-shadow:none ;
     }
     .content__findacctive__desc {
         display: block;
@@ -645,13 +711,13 @@
     .BestOfChoice {
     }
     .BestOfChoice__wrap {
-        bottom: 15px;
+        bottom: 20px;
         left: 30px;
     }
     .BestOfChoice__title {
         font-size: 1.8rem;
         line-height: 2rem;
-        margin-bottom: 5px;
+        margin-bottom: 12px;
     }
     .BestOfChoice__desc {
         display: none;
@@ -675,8 +741,10 @@
         white-space: nowrap;
         font-size: 1.4rem;
         margin: 0;
+        text-shadow: 1px 2px 2px var(--black-color)
     }
     .trend__collum__text img{
+        width: 20px;
         margin-left: 5px;
         
     }

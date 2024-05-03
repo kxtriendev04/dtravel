@@ -17,8 +17,11 @@
     <!-- NHÚNG ICON -->
     <link rel="stylesheet" href="./assets/font/fontawesome-free-6.5.2-web/css/all.css">
 
-    <style></style>
-</head>
+    <script src="./app.js" defer></script>
+    <style>
+
+    </style>
+    </s>
 
 <body>
     <div id="header">
@@ -208,9 +211,12 @@
         </div>
         <!-- Explore content -->
         <div class="content__divided"></div>
-        <div class="content__selection">
+        <div class="content__selection explore__content">
             <h3 class="content__selection__title">Khám phá Việt Nam</h3>
             <p class="content__selection__desc">Các điểm đến phổ biến này có nhiều điều chờ đón bạn</p>
+            <button id="prev" class="section__btn section_btn_left">
+                <i class="fa-solid fa-angle-left"></i>
+            </button>
             <div class="content__selection__wrap">
                 <a href="/trend" class="selection__wrap__item">
                     <img src="./assets/img/main_img/content_explore/tphcm.jpg" alt=""
@@ -248,15 +254,37 @@
                     <h3 class="selection__wrap__item__title">Bangkok</h3>
                     <p class="selection__wrap__item__infor">951 chỗ nghỉ</p>
                 </a>
-                <div class="content__selection__next">
-                    <i class="fa-solid fa-chevron-right"></i>
-                </div>
+                <a href="/trend" class="selection__wrap__item">
+                    <img src="./assets/img/main_img/content_explore/bangkok.jpg" alt=""
+                        class="selection__wrap__item__img">
+                    <h3 class="selection__wrap__item__title">Bangkok</h3>
+                    <p class="selection__wrap__item__infor">951 chỗ nghỉ</p>
+                </a>
+                <a href="/trend" class="selection__wrap__item">
+                    <img src="./assets/img/main_img/content_explore/bangkok.jpg" alt=""
+                        class="selection__wrap__item__img">
+                    <h3 class="selection__wrap__item__title">Bangkok</h3>
+                    <p class="selection__wrap__item__infor">951 chỗ nghỉ</p>
+                </a>
+                <a href="/trend" class="selection__wrap__item">
+                    <img src="./assets/img/main_img/content_explore/bangkok.jpg" alt=""
+                        class="selection__wrap__item__img">
+                    <h3 class="selection__wrap__item__title">Bangkok</h3>
+                    <p class="selection__wrap__item__infor">951 chỗ nghỉ</p>
+                </a>
             </div>
+            <button id="next" class="section__btn section_btn_right">
+                <i class="fa-solid fa-angle-right"></i>
+            </button>
+
         </div>
         <!-- SearchBy -->
         <div class="content__divided"></div>
-        <div class="content__selection ">
+        <div class="content__selection searchby__content">
             <h3 class="content__selection__title ">Tìm theo loại chỗ nghỉ ở Hà Nội</h3>
+            <button id="prev" class="section__btn section_btn_left">
+                <i class="fa-solid fa-angle-left"></i>
+            </button>
             <div class="content__selection__wrap">
                 <a href="/searchby" class="selection__wrap__item ">
                     <img src="./assets/img/main_img/content_searchby/canho.jpg" alt=""
@@ -286,46 +314,102 @@
                     <p class="selection__wrap__item__desc ">Siêu phù hợp với người mộng mer</p>
                     <p class="selection__wrap__item__infor ">Còn 306 chỗ nghỉ trống</p>
                 </a>
-                <div class="content__selection__next content__searchby__next">
-                    <i class="fa-solid fa-chevron-right"></i>
-                </div>
+                <a href="/searchby" class="selection__wrap__item ">
+                    <img src="./assets/img/main_img/content_searchby/laudai.jpg" alt=""
+                        class="selection__wrap__item__img ">
+                    <h3 class="selection__wrap__item__title ">Lâu đài</h3>
+                    <p class="selection__wrap__item__desc ">Siêu phù hợp với người mộng mer</p>
+                    <p class="selection__wrap__item__infor ">Còn 306 chỗ nghỉ trống</p>
+                </a>
+                <a href="/searchby" class="selection__wrap__item ">
+                    <img src="./assets/img/main_img/content_searchby/laudai.jpg" alt=""
+                        class="selection__wrap__item__img ">
+                    <h3 class="selection__wrap__item__title ">Lâu đài</h3>
+                    <p class="selection__wrap__item__desc ">Siêu phù hợp với người mộng mer</p>
+                    <p class="selection__wrap__item__infor ">Còn 306 chỗ nghỉ trống</p>
+                </a>
+                <a href="/searchby" class="selection__wrap__item ">
+                    <img src="./assets/img/main_img/content_searchby/laudai.jpg" alt=""
+                        class="selection__wrap__item__img ">
+                    <h3 class="selection__wrap__item__title ">Lâu đài</h3>
+                    <p class="selection__wrap__item__desc ">Siêu phù hợp với người mộng mer</p>
+                    <p class="selection__wrap__item__infor ">Còn 306 chỗ nghỉ trống</p>
+                </a>
             </div>
+            <button id="next" class="section__btn section_btn_right">
+                <i class="fa-solid fa-angle-right"></i>
+            </button>
         </div>
         <!-- TopRank content -->
         <div class="content__divided"></div>
-        <div class="content__selection">
+        <div class="content__selection toprank__content">
             <h3 class="content__selection__title">Điểm đến hàng đầu cho kỳ nghỉ tiếp theo của bạn</h3>
             <p class="content__selection__desc">Đây là địa điểm thu hút nhiều khách du lịch</p>
+            <button id="prev" class="section__btn section_btn_left">
+                <i class="fa-solid fa-angle-left"></i>
+            </button>
             <div class="content__selection__wrap">
                 <a href="/trend" class="selection__wrap__item content__toprank">
                     <img src="./assets/img/main_img/content_toprank/tokyo.jpg" alt=""
                         class="selection__wrap__item__img">
-                    <h3 class="selection__wrap__item__title">Tokyo, Nhật Bản</h3>
+                    <div class="selection__wrap__text">
+                        <h3 class="selection__wrap__item__title">Tokyo, Nhật Bản</h3>
+                    </div>
                 </a>
                 <a href="/trend" class="selection__wrap__item content__toprank">
                     <img src="./assets/img/main_img/content_toprank/singapo.jpg" alt=""
                         class="selection__wrap__item__img">
-                    <h3 class="selection__wrap__item__title">Singapore, Singapore</h3>
+                    <div class="selection__wrap__text">
+                        <h3 class="selection__wrap__item__title">Singapore, Singapore</h3>
+                    </div>
                 </a>
                 <a href="/trend" class="selection__wrap__item content__toprank">
                     <img src="./assets/img/main_img/content_toprank/hanoi.jpg" alt=""
                         class="selection__wrap__item__img">
-                    <h3 class="selection__wrap__item__title">Hà Nội, Việt Nam</h3>
+                    <div class="selection__wrap__text">
+                        <h3 class="selection__wrap__item__title">Hà Nội, Việt Nam</h3>
+                    </div>
                 </a>
                 <a href="/trend" class="selection__wrap__item content__toprank">
                     <img src="./assets/img/main_img/content_toprank/seoul.jpg" alt=""
                         class="selection__wrap__item__img">
-                    <h3 class="selection__wrap__item__title">Seoul, Hàn Quốc</h3>
+                    <div class="selection__wrap__text">
+                        <h3 class="selection__wrap__item__title">Seoul, Hàn Quốc</h3>
+                    </div>
                 </a>
-                <div class="content__selection__next content__toprank__next">
-                    <i class="fa-solid fa-chevron-right"></i>
-                </div>
+                <a href="/trend" class="selection__wrap__item content__toprank">
+                    <img src="./assets/img/main_img/content_toprank/seoul.jpg" alt=""
+                        class="selection__wrap__item__img">
+                    <div class="selection__wrap__text">
+                        <h3 class="selection__wrap__item__title">Seoul, Hàn Quốc</h3>
+                    </div>
+                </a>
+                <a href="/trend" class="selection__wrap__item content__toprank">
+                    <img src="./assets/img/main_img/content_toprank/seoul.jpg" alt=""
+                        class="selection__wrap__item__img">
+                    <div class="selection__wrap__text">
+                        <h3 class="selection__wrap__item__title">Seoul, Hàn Quốc</h3>
+                    </div>
+                </a>
+                <a href="/trend" class="selection__wrap__item content__toprank">
+                    <img src="./assets/img/main_img/content_toprank/seoul.jpg" alt=""
+                        class="selection__wrap__item__img">
+                    <div class="selection__wrap__text">
+                        <h3 class="selection__wrap__item__title">Seoul, Hàn Quốc</h3>
+                    </div>
+                </a>
             </div>
+            <button id="next" class="section__btn section_btn_right">
+                <i class="fa-solid fa-angle-right"></i>
+            </button>
         </div>
         <!-- FindActive content -->
         <div class="content__divided"></div>
         <div class="content__selection">
             <h3 class="content__selection__title">Tìm hoạt động ở...</h3>
+            <button id="prev" class="section__btn section_btn_left">
+                <i class="fa-solid fa-angle-left"></i>
+            </button>
             <div class="content__selection__wrap">
                 <a href="" class="selection__wrap__item content__findacctive">
                     <img src="./assets/img/main_img/content_findactitivies/paris.jpg" alt=""
@@ -356,13 +440,37 @@
                         class="selection__wrap__item__img">
                     <div class="selection__wrap__item__text">
                         <h3 class="selection__wrap__item__title content__findacctive__title">Hongkong</h3>
-                        <p class="selection__wrap__item__desc content__findacctive__desc">132 0+ hoạt động</p>
+                        <p class="selection__wrap__item__desc content__findacctive__desc">1320+ hoạt động</p>
                     </div>
                 </a>
-                <div class="content__selection__next content__findacctive__next">
-                    <i class="fa-solid fa-chevron-right"></i>
-                </div>
+                <a href="" class="selection__wrap__item content__findacctive">
+                    <img src="./assets/img/main_img/content_findactitivies/hongkong.jpg" alt=""
+                        class="selection__wrap__item__img">
+                    <div class="selection__wrap__item__text">
+                        <h3 class="selection__wrap__item__title content__findacctive__title">Hongkong</h3>
+                        <p class="selection__wrap__item__desc content__findacctive__desc">1320+ hoạt động</p>
+                    </div>
+                </a>
+                <a href="" class="selection__wrap__item content__findacctive">
+                    <img src="./assets/img/main_img/content_findactitivies/hongkong.jpg" alt=""
+                        class="selection__wrap__item__img">
+                    <div class="selection__wrap__item__text">
+                        <h3 class="selection__wrap__item__title content__findacctive__title">Hongkong</h3>
+                        <p class="selection__wrap__item__desc content__findacctive__desc">1320+ hoạt động</p>
+                    </div>
+                </a>
+                <a href="" class="selection__wrap__item content__findacctive">
+                    <img src="./assets/img/main_img/content_findactitivies/hongkong.jpg" alt=""
+                        class="selection__wrap__item__img">
+                    <div class="selection__wrap__item__text">
+                        <h3 class="selection__wrap__item__title content__findacctive__title">Hongkong</h3>
+                        <p class="selection__wrap__item__desc content__findacctive__desc">1320+ hoạt động</p>
+                    </div>
+                </a>
             </div>
+            <button id="next" class="section__btn section_btn_right">
+                <i class="fa-solid fa-angle-right"></i>
+            </button>
         </div>
         <!-- Hightlight Content -->
         <div class="content__divided"></div>
@@ -676,7 +784,9 @@
                 bạn ở tại quốc gia hoặc vùng lãnh thổ khác, vui lòng chọn phiên bản Dtravel phù hợp với quốc gia hoặc
                 vùng lãnh thổ của mình trong menu thả xuống.</p>
             <p class="footer__about__ending">This is Group 8's project ♡</p>
-            <p>UPDATE 2/5/2024</p>
+            <p></p>
+            <p></p>
+            <p>UPDATE 3/5/2024</p>
         </div>
 
     </div>
@@ -690,77 +800,9 @@
 
 
 
-        // Navigation
-        const aLinkItems = document.querySelectorAll('.nav__item')
-        aLinkItems.forEach(a => {
-            a.onclick = function (e) {
-                e.preventDefault()
-                const aLinkItemSelected = document.querySelector('.nav__item.nav__selected')
-                aLinkItemSelected.classList.remove('nav__selected')
-                a.classList.add('nav__selected')
-            }
-        })
-
-        // SearchBy Navbar
-        const searchNavItems = document.querySelectorAll('.search__nav__item')
-        console.log(searchNavItems)
-        searchNavItems.forEach(a => {
-            a.onclick = function (e) {
-                e.preventDefault()
-                const aNavSearchSelected = document.querySelector('.search__nav__item.search__nav__selected')
-                aNavSearchSelected.classList.remove('search__nav__selected')
-                a.classList.add('search__nav__selected')
-            }
-        })
-
-
-
-
-
-
-        const overlay = document.querySelector('.overlay')
-
-        // HOME - HeaderBarsHandler
-
-        const headerBar = document.querySelector('.header-bars')
-        const navMobileTable = document.querySelector('.nav-tablet-mobile')
-        headerBar.addEventListener('click', () => {
-            navMobileTable.classList.add('active')
-            overlay.style.display = 'block'
-            overlay.onclick = () => {
-                navMobileTable.classList.remove('active')
-                overlay.style.display = 'none'
-            }
-        })
-
-        const navMobileTableClose = document.querySelector('.nav-mobile-tablet-close')
-        navMobileTableClose.addEventListener('click', () => {
-            navMobileTable.classList.remove('active')
-            overlay.style.display = 'none'
-        })
-
-        // LIEN HE DICH VU - ListHandler
-        const optionListBtns = document.querySelectorAll('.content__question__option__wrap')
-        optionListBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                const ulListItem = btn.querySelector('.content__question__option__item');
-                const listDownIcon = btn.querySelector('.list-down-icon')
-                const listRightIcon = btn.querySelector('.list-right-icon')
-
-                if (ulListItem.classList.contains('active')) {
-                    ulListItem.classList.remove('active')
-                    listRightIcon.style.display = 'block'
-                    listDownIcon.style.display = 'none'
-                    return
-                }
-                ulListItem.classList.add('active')
-                listRightIcon.style.display = 'none'
-                listDownIcon.style.display = 'block'
-            })
-        })
-
-
     </script>
+
+
 </body>
 
 </html>

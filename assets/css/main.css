@@ -8,7 +8,7 @@
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 3;
+    z-index: 4;
     display: none;
 }
 
@@ -22,7 +22,7 @@
     justify-content: space-between;
     position: fixed;
     top: 0;
-    z-index: 2;
+    z-index: 3;
 }
 
 .header__logo {
@@ -197,6 +197,8 @@
     display: flex;
     overflow-x: auto;
     align-items: center;
+    scrollbar-width: none;
+
 }
 #nav::-webkit-scrollbar {
     width: 0;
@@ -232,7 +234,7 @@
 .nav__selected {
     outline: 1px solid var(--white-color);
     background-color: #ffffff15;
-
+    animation: fadeIn .3s ease;
 }
 
 /* NAV Tablet & Mobile */
